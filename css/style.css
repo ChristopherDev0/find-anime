@@ -1,0 +1,173 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    background-color:#232536;
+}
+h2, h3{
+    margin: 0%;
+    color: white;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+@media (min-width: 750px) {
+    h2, h3{
+        font-size: 2.5rem;
+    }
+}
+img{
+    max-width: 25rem;
+}
+.header{
+    background-color:#1b1d27;
+    padding:2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.search-filter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+@media (min-width: 750px) {
+    .search-filter{
+        flex-direction: row;
+        text-align: center;
+        align-items:initial;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+.search-card .select-btn{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5rem;
+    min-width: 24rem;
+}
+.select-btn i{
+    font-size: 2rem;
+    transition: 0.3s; /* transision para rotar */
+}
+.search-card.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.search-card .options{
+    position: relative;
+    padding: 1rem;
+    background-color: white;
+    margin: 0%;
+    border-radius: 8px;
+    display: none;
+    margin-top: 1rem;
+}
+.search-card .options img{
+    width: 16%;
+}
+.search-card.active .options{
+    display: block;
+    position: absolute;
+}
+.options .option{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    padding: 0rem 1rem; 
+    border: solid #e2e0e0 1px;
+    height: 5rem;
+    max-width: 22rem;
+    border-radius:8px;
+    margin-bottom: 1rem;
+}
+.options .option:hover{
+    background-color: #dfdddd;
+}
+.option .option-text{
+    font-size: 1.3rem;
+}
+/* result anime */
+.conatier-reult{
+    max-width: 85%;
+    margin: 6rem auto 5rem;
+    border-radius: 1rem;
+    background-color: #32364d;
+    padding: 1rem;
+    box-shadow: 4px 6px 9px 0px rgb(0 0 0 / 49%);
+}
+@media (min-width: 750px) {
+    .conatier-reult{
+        margin: 9rem auto 7rem;
+        max-width: 70%;
+    }
+}
+.anime-finder{
+    min-height: 5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: #e2e0e0;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.head-result{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.head-result p{
+    background-color:#1e202c;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media (min-width: 750px) {
+    .head-result p{
+        font-size: 1.3rem;
+    }
+}
+.anime-finder #animeFound{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.dataAnime{
+    background-color: #f3eeee;
+    padding: 1rem 1.5rem;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+.dataAnime p{
+    margin: .5rem 0rem;
+    font-size: 1.3rem;
+}
+.noResult{
+    background-color: #f3eeee;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100%;
+}
